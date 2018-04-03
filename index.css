@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Economica', sans-serif;
+}
+
+html { 
+  background: url('https://media.newyorker.com/photos/590976388b51cf59fc423197/master/w_727,c_limit/BeyonceLemonade.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+#start-quiz-page {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+.question-page {
+  color: black;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  margin-left:auto; 
+  margin-right:auto;
+  
+}
+
+.feedback-page {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.feedback-page h2 {
+  color: white;
+}
+
+.results-page h1 {
+  color: white;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  color: black;
+}
+
+.transbox {
+  background-color: #ffffff;
+  border: 1px solid white;
+  opacity: 0.8;
+  height: 400px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.question {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  margin: 15px auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+label:hover {
+  font-size: 33px;
+}
+
+.current-status {
+  font-size: 35px;
+  color: white;
+}
+
+.question-number {
+  float: left;
+}
+
+.score {
+  float: right;
+}
+
+
+.next-button {
+  text-align: center;
+}
+
+button {
+  width: 300px;
+  height: 55px;
+  border: 2px;
+  cursor: pointer;
+  background-color: lightgrey;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+#sub-btn {
+  width: 300px;
+  height: 55px;
+  padding: 5px;
+  border: 2px;
+  cursor: pointer;
+  background-color: lightgrey;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#sub-btn:hover {
+  background-color: pink;
+}
+
+@media only screen and (min-width: 768px) {
+  .transbox {
+    height: 350px;
+    width: 500px;
+  }
+  button {
+    width: 500px;
+  }
+  .question-page {
+    height: 600px;
+    width: 500px;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  #sub-btn {
+    width: 500px;
+  }
+  .current-status {
+    font-size: 35px;
+  }
+  body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .transbox {
+    height: 350px;
+    width: 700px;
+  }
+   button {
+    width: 700px;
+  }
+  #sub-btn {
+    width: 700px;
+  }
+  .question-page {
+    width: 700px;
+  }
+  body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
