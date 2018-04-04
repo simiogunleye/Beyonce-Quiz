@@ -102,9 +102,9 @@ let correctAnswers = 0;
 function questionPage(correctAnswers, question, questionsAnswered) {
    $('.next-btn').hide();
   return `
-    <div class='question-page' role='main'>
+   <div class='question-page' role='main'>
       <div class='transbox'> 
-        <h2 class='question'>${question.text}</h2>
+        <h1 class='question'>${question.text}</h1>
         <form id="question-form">
           <fieldset>
             <legend>Answer Options</legend>
@@ -181,11 +181,11 @@ function checkAnswer(answer) {
 function giveResponse(responseType) {
   if (responseType === 'correct') {
     $('.container').html(`<div class="feedback-page" role="main">
-    <h2>Yes! You're one step closer to the hive!</h2>
+    <h1>Yes! You're one step closer to the hive!</h1>
   </div>`);
   } else {
     $('.container').html(`<div class="feedback-page" role="main">
-    <h2>Incorrect! The correct answer is "${ANSWERS[questionNum - 1]}"</h2>
+    <h1>Incorrect! The correct answer is "${ANSWERS[questionNum - 1]}"</h1>
   </div>`);
   //handleQuizButtons();
   }
@@ -210,10 +210,10 @@ function handleNextButton() {
 
 function showResults() {
   $('.container').html(`
-    <div class='results-page'>
+    <div class='results-page' role='main'>
       <h1>Total Score: ${correctAnswers}/10
     </div>
-    <div><button class='restart-btn'>Restart Quiz</button></div>`); 
+    <div role='navigation'><button class='restart-btn'>Restart Quiz</button></div>`); 
   $('.next-btn').hide();
   handleRestartButton();
 }
